@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: %i[ show edit update destroy ]
-
+  # before_action :validate_image, only: %i[ create ]
   # GET /products or /products.json
   def index
     @products = Product.all
@@ -63,6 +63,12 @@ class ProductsController < ApplicationController
     def set_product
       @product = Product.find(params[:id])
     end
+# validates image doesnt work in test enviroment
+    # def validate_image
+    #   unless File.file?("/Users/djordje/Desktop/rails-application/depot/app/assets/images/" + params[:image_url].to_s)
+    #     redirect_to products_url, notice: "no image"
+    #   end
+    # end
 
     # Only allow a list of trusted parameters through.
     def product_params
