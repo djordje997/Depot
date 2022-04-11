@@ -2,8 +2,10 @@
   <aside id= "notice"><%= notice %></aside>
 <% end %>
 <h1>Your Pragmatic Catalog</h1>
+<% unless session[:counter].nil? %>
 <% if session[:counter] > 5 %>
 <%= "Visited: " + pluralize(session[:counter], "time") %>
+<% end %>
 <% end %>
 <ul class="catalog">
   <% cache @products do %>
