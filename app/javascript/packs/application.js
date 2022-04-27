@@ -2,3 +2,6 @@
 var componentRequireContext = require.context("components", true);
 var ReactRailsUJS = require("react_ujs");
 ReactRailsUJS.useContext(componentRequireContext);
+
+window.I18n = require("../../../public/javascripts/i18n")
+require("../../../public/javascripts/translations")

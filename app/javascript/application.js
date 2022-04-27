@@ -2,3 +2,6 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 import "channels"
+
+window.I18n = require("../../../public/javascripts/i18n")
+require("../../../public/javascripts/translations")
