@@ -22,6 +22,8 @@ module Depot
 
     config.autoload_paths += %W(#{Rails.root}/lib)
 
+    config.secret_key_base = 'blipblapblup'
+
     config.to_prepare do 
       #taken from https://github.com/rails/rails/issues/43928 once rails issue is resolved we can remove this code
       # some monkey patches
