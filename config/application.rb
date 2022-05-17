@@ -20,6 +20,8 @@ module Depot
     # config.eager_load_paths << Rails.root.join("extras")
     config.middleware.use I18n::JS::Middleware
 
+    config.autoload_paths += %W(#{Rails.root}/lib)
+
     config.to_prepare do 
       #taken from https://github.com/rails/rails/issues/43928 once rails issue is resolved we can remove this code
       # some monkey patches
