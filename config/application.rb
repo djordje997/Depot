@@ -22,7 +22,7 @@ module Depot
 
     config.autoload_paths += %W(#{Rails.root}/lib)
     
-    #line 26 and line 28 fix for heroku deploy
+    #line 26 and line 28 fix for heroku deploy.
     config.secret_key_base = 'blipblapblup'
 
     config.assets.initialize_on_precompile = false
