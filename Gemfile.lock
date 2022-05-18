@@ -233,6 +233,8 @@ GEM
     thor (1.2.1)
     tilt (2.0.10)
     timeout (0.2.0)
+    trix-rails (2.4.0)
+      rails (> 4.1)
     turbo-rails (1.0.1)
       actionpack (>= 6.0.0)
       railties (>= 6.0.0)
@@ -283,6 +285,7 @@ DEPENDENCIES
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
+  trix-rails
   turbo-rails
   tzinfo-data
   web-console

@@ -77,3 +77,4 @@ gem "react-rails"
 gem "webpacker"
 gem "i18n-js"
 gem "pg"
+gem 'trix-rails', require: 'trix'
