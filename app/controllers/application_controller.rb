@@ -1,6 +1,8 @@
 class ApplicationController < ActionController::Base
   before_action :set_i18n_locale_from_params
   before_action :authorize
+  #CSRF TOKEN
+  skip_before_action :verify_authenticity_token
   
 
   protected
